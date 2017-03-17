@@ -53,7 +53,19 @@ var directions = d3.select("body").append("p").text("Click to set your location\
     {
       return d.properties.name;
     })
-    .style("fill", "#ffffff")
-    .style("stroke", "black");
+    .style("fill", "blue")
+    .style("stroke", "white")
+    .style("fill-opacity", 0.6)
+    .on("mouseover", function (d, i)
+      {
+        d3.select(this).style('fill-opacity', 1);
+        
+      })
+    .on('mouseout', function(d, i) 
+      {
+        d3.select(this).style('fill-opacity', .6);
+      });;
+
+
 
 });
