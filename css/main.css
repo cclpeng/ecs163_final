@@ -1,0 +1,73 @@
+body {
+  /*background: #363A44;
+  color: #FFFFFF;*/
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+svg {
+  margin: 20px;
+}
+
+.line{
+
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+p {
+  text-align: justify;
+}
+
+
+
+#rim {
+  fill: none;
+  stroke: #999;
+  stroke-width: 3px;
+}
+
+.second-hand{
+  stroke-width:3;
+
+}
+
+.minute-hand{
+  stroke-width:8;
+  stroke-linecap:round;
+}
+
+.hour-hand{
+  stroke-width:12;
+  stroke-linecap:round;
+}
+
+.hands-cover{
+  stroke-width:3;
+  fill:#fff;
+}
+
+.second-tick{
+  stroke-width:3;
+  fill:#000;  
+}
+
+.hour-tick{
+  stroke-width:8; //same as the miute hand
+}
+
+.second-label{
+  font-size: 12px;
+}
+
+.hour-label{
+  font-size: 24px;
+}
+/*path:hover {
+  opacity: 0.5;
+  text-align: center;
+  color: #ccc;
+}*/
