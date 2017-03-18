@@ -73,6 +73,8 @@ $(document).ready(function() {
     })
     .attr('data-name', function(d) 
     {
+            console.log(d.properties.name);
+
       return d.properties.name;
     })
     .style("fill", "blue")
@@ -102,8 +104,9 @@ $(document).ready(function() {
                         .attr("font-size", "15px")
                         .attr("font-weight", "bold")
                         .attr("fill", "black")
-                        .text("HI TOM");
+                        .text(this.getAttribute("data-name"));
 
+                        console.log(this.getAttribute("data-name"));
 
 
     
