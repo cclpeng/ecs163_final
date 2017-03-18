@@ -24,48 +24,52 @@ p {
 
 
 
-#rim {
-  fill: none;
-  stroke: #999;
-  stroke-width: 3px;
-}
-
-.second-hand{
-  stroke-width:3;
-
-}
-
-.minute-hand{
-  stroke-width:8;
-  stroke-linecap:round;
-}
-
-.hour-hand{
-  stroke-width:12;
-  stroke-linecap:round;
-}
-
-.hands-cover{
-  stroke-width:3;
-  fill:#fff;
-}
-
-.second-tick{
-  stroke-width:3;
-  fill:#000;  
-}
-
-.hour-tick{
-  stroke-width:8; //same as the miute hand
-}
-
-.second-label{
-  font-size: 12px;
-}
-
-.hour-label{
-  font-size: 24px;
-}
+.state{
+    fill: none;
+    stroke: #a9a9a9;
+    stroke-width: 1;
+  }
+  .state:hover{
+    fill-opacity:0.5;
+  }
+  #tooltip {   
+    position: absolute;           
+    text-align: center;
+    padding: 20px;             
+    margin: 10px;
+    font: 12px sans-serif;        
+    background: lightsteelblue;   
+    border: 1px;      
+    border-radius: 2px;           
+    pointer-events: none;         
+  }
+  #tooltip h4{
+    margin:0;
+    font-size:14px;
+  }
+  #tooltip{
+    background:rgba(0,0,0,0.9);
+    border:1px solid grey;
+    border-radius:5px;
+    font-size:12px;
+    width:auto;
+    padding:4px;
+    color:white;
+    opacity:0;
+  }
+  #tooltip table{
+    table-layout:fixed;
+  }
+  #tooltip tr td{
+    padding:0;
+    margin:0;
+  }
+  #tooltip tr td:nth-child(1){
+    width:50px;
+  }
+  #tooltip tr td:nth-child(2){
+    text-align:center;
+  }
 /*path:hover {
   opacity: 0.5;
   text-align: center;
